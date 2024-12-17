@@ -1,0 +1,110 @@
+body {
+    background: linear-gradient(135deg, #131b24, #39617c);
+    color: #d1d5da;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(135deg, #7fafcf, #049bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.8rem; /* Reduzido de 2.2rem */
+    font-weight: bold;
+}
+
+.container {
+    width: 85%; /* Reduzida de 90% */
+    max-width: 900px; /* Reduzida de 1000px */
+    margin: 15px auto;
+    padding: 15px; /* Reduzido de 20px */
+    background-color: #0f1a26;
+    border-radius: 10px; /* Reduzido de 15px */
+    border-left: 2px solid #5dade2; /* Reduzido de 3px */
+    border-right: 2px solid #5dade2; /* Reduzido de 3px */
+}
+
+.filter select {
+    padding: 8px 18px; /* Reduzido para tornar o filtro mais compacto */
+    background-color: #1b2734;
+    color: #5dade2;
+    border: 2px solid #5dade2;
+    border-radius: 12px; /* Mantido arredondado, mas ajustado */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px; /* Reduzido para harmonizar com o tamanho menor */
+    font-family: 'Segoe UI', sans-serif;
+    appearance: none; /* Remove a seta padrão */
+    outline: none;
+    background-image: none; /* Garante que nenhuma seta seja exibida */
+}
+
+.filter select:focus {
+    border-color: #7fafcf; /* Adiciona um leve destaque no foco */
+    box-shadow: 0 0 5px #7fafcf;
+}
+
+.filter {
+    position: relative;
+}
+
+.filter::after {
+    content: "▼"; /* Adiciona uma seta personalizada */
+    font-size: 12px;
+    color: #5dade2;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Garante que o clique não afete a seta */
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 15px; /* Reduzido de 20px */
+}
+
+.logo-container img {
+    max-width: 120px; /* Reduzido de 150px */
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px; /* Reduzido de 10px */
+}
+
+th, td {
+    padding: 12px 18px; /* Reduzido de 16px 22px */
+    text-align: left;
+}
+
+th {
+    background-color: #1b2734;
+    color: #5dade2;
+    font-weight: bold;
+    border-bottom: 2px solid #5dade2; /* Reduzido de 3px */
+}
+
+td {
+    background-color: #0f1a26;
+    color: #d1d5da;
+    border-bottom: 1px solid #243140;
+}
+
+tr:hover td {
+    background-color: #1b2734;
+    color: #ffffff;
+}
